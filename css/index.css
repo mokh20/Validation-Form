@@ -1,0 +1,89 @@
+:root {
+    --slow-red: #ff0800;
+    --green: #1dd670;
+    --slow-blue: #2050ec;
+    --dark: #333538;
+    --border-radius-min: 10px;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: iransans-light;
+    position: relative;
+    color: white;
+    height: 100vh;
+}
+
+.form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid var(--slow-blue);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-min);
+}
+
+form h1 {
+    text-align: center;
+    margin: 0.8rem;
+}
+
+.input-control {
+    width: 100%;
+    display: grid;
+    margin: 0.5rem 1.2rem;
+}
+
+.input-control label {
+    padding-bottom: 0.5rem;
+}
+
+input {
+    padding: 0.3rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--slow-blue);
+    color: white;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+
+button,
+input {
+    border-radius: 4px;
+}
+
+.error-validation {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    color: var(--slow-red);
+}
+
+input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border: 2px solid #09c372;
+}
+
+.input-control.error input {
+    border: 2px solid #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
